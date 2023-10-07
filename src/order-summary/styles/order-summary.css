@@ -1,0 +1,122 @@
+html {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background: url("/public/images/pattern-background-mobile.svg") center/cover no-repeat;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.order-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  width: 95%;
+  border-radius: 25px;
+  background-color: white;
+}
+.order-summary__image {
+  width: 100%;
+}
+.order-summary__image img {
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+}
+.order-summary__field {
+  margin: 0 auto;
+  width: 80%;
+}
+.order-summary__field article {
+  margin: 0 auto;
+  width: 95%;
+  text-align: center;
+}
+.order-summary__field article h2 {
+  font-weight: 900;
+}
+.order-summary__field article p {
+  font-weight: 500;
+  opacity: 0.6;
+}
+.order-summary__field .plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  margin: 30px auto;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 20px;
+}
+.order-summary__field .plan__default {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+}
+.order-summary__field .plan__default span #plan-name {
+  font-weight: 700;
+}
+.order-summary__field .plan__default span #plan-value {
+  font-weight: 500;
+  opacity: 0.6;
+}
+.order-summary__field .plan__default span p {
+  margin: 2px 0;
+}
+.order-summary__field .plan__optional a {
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+}
+.order-summary__field .plan__optional a:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.order-summary__field .payments {
+  margin: 20px auto;
+  width: 100%;
+}
+.order-summary__field .payments__proceed button {
+  padding: 15px;
+  width: 100%;
+  font-weight: 900;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 10px;
+}
+.order-summary__field .payments__proceed button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.order-summary__field .payments__cancel {
+  margin: 20px auto;
+  width: 100%;
+  text-align: center;
+}
+.order-summary__field .payments__cancel a {
+  font-weight: 900;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.6;
+}
+.order-summary__field .payments__cancel a:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.attribution {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    background-image: url("/images/pattern-background-desktop.svg");
+  }
+  .order-summary {
+    width: 30%;
+  }
+}/*# sourceMappingURL=order-summary.css.map */
